@@ -1,6 +1,6 @@
 import { generateToken } from "../lib/utils.js";
 import User from "../models/user.model.js";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs";  //for password incryption
 import cloudinary from "../lib/cloudinary.js";
 
 export const signup = async (req, res) => {
@@ -28,7 +28,7 @@ export const signup = async (req, res) => {
     });
 
     if (newUser) {
-      // generate jwt token here
+      // generate jwt token 
       generateToken(newUser._id, res);
       await newUser.save();
 
