@@ -12,8 +12,8 @@ import { useAuthStore } from "./store/useAuthStore.js";
 import { useThemeStore } from "./store/useThemeStore";
 import { useEffect } from "react";
 
-import { Loader } from "lucide-react";
-import { Toaster } from "react-hot-toast";
+import { Loader } from "lucide-react";  //svg icons for react
+import { Toaster } from "react-hot-toast";  //for notifications
 
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth, onlineUsers } = useAuthStore();

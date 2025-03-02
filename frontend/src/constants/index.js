@@ -1,3 +1,4 @@
+//daisy ui themes
 export const THEMES = [
     "light",
     "dark",

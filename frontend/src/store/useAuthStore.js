@@ -1,10 +1,11 @@
-import { create } from "zustand";
+import { create } from "zustand";  // for state management
 import { axiosInstance } from "../lib/axios.js";
 import toast from "react-hot-toast";
-import { io } from "socket.io-client";
+import { io } from "socket.io-client";  
 
 const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:5001" : "/";
 
+//differnt state of user
 export const useAuthStore = create((set, get) => ({
   authUser: null,
   isSigningUp: false,
@@ -82,6 +83,7 @@ export const useAuthStore = create((set, get) => ({
     }
   },
 
+  //for real time communication
   connectSocket: () => {
     const { authUser } = get();
     if (!authUser || get().socket?.connected) return;
@@ -99,6 +101,7 @@ export const useAuthStore = create((set, get) => ({
       set({ onlineUsers: userIds });
     });
   },
+  //for  closing socket and better optimization 
   disconnectSocket: () => {
     if (get().socket?.connected) get().socket.disconnect();
   },

@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+import { X } from "lucide-react"; //close button for alerts
 import { useAuthStore } from "../store/useAuthStore.js";
 import { useChatStore } from "../store/useChatStore.js";
 

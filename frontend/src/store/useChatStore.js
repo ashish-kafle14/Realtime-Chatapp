@@ -1,8 +1,9 @@
-import { create } from "zustand";
+import { create } from "zustand"; //state management
 import toast from "react-hot-toast";
 import { axiosInstance } from "../lib/axios";
 import { useAuthStore } from "./useAuthStore.js";
 
+//chat states
 export const useChatStore = create((set, get) => ({
   messages: [],
   users: [],
@@ -43,6 +44,7 @@ export const useChatStore = create((set, get) => ({
     }
   },
 
+  //check for messages with socket
   subscribeToMessages: () => {
     const { selectedUser } = get();
     if (!selectedUser) return;
