@@ -35,8 +35,8 @@ Ensure you have the following installed:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/ashish-kafle14/MERN-STACK-Chatapp.git
-cd MERN-STACK-Chatapp
+git clone https://github.com/ashish-kafle14/Realtime-Chatapp.git
+cd Realtime-Chatapp
 ```
 
 ### 2️⃣ Backend Setup
