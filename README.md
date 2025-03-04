@@ -50,11 +50,11 @@ Create a `.env` file in the `server` directory and configure the following envir
 
 ```env
 PORT=5001
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+MONGO_URI=.....
+JWT_SECRET=........
+CLOUDINARY_CLOUD_NAME=.......
+CLOUDINARY_API_KEY=......
+CLOUDINARY_API_SECRET=.......
 ```
 
 ### 3️⃣ Frontend Setup
