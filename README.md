@@ -35,7 +35,7 @@ Ensure you have the following installed:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/ashish-kafle14/MERN-STACK-Chatapp.git
 cd your-repository
 ```
 
@@ -83,8 +83,6 @@ npm start
 3. Check online status updates.
 4. Customize themes.
 5. Upload and share images via Cloudinary.
-
-
 
 ## 🤝 Contributing
 
