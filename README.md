@@ -36,7 +36,7 @@ Ensure you have the following installed:
 
 ```bash
 git clone https://github.com/ashish-kafle14/MERN-STACK-Chatapp.git
-cd your-repository
+cd MERN-STACK-Chatapp
 ```
 
 ### 2️⃣ Backend Setup
